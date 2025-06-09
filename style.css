@@ -1,0 +1,309 @@
+:root {
+    --color-fondo: #e3f0f4;
+    --color-texto: #334756;
+    --color-acento-suave: #a6bcd0;
+    --color-acento-medio: #708e9e;
+    --color-acento-fuerte: #f9cb9c;
+    --color-blanco-calido: #fff;
+
+    --fuente-titulos: 'Cinzel', serif;
+    --fuente-texto: 'Quicksand', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: var(--fuente-texto);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-acento-medio);
+    letter-spacing: 0.8px;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+a {
+    color: var(--color-acento-medio);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-acento-fuerte);
+}
+
+header {
+    background-color: var(--color-acento-suave);
+    padding: 2rem;
+    border-bottom: 2px solid var(--color-acento-medio);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--color-texto);
+}
+
+nav {
+    background-color: var(--color-blanco-calido);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-acento-suave);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin: 0;
+    width: 100%;
+}
+
+nav li {
+    margin: 8px 15px;
+    text-align: center;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 1.15em;
+    color: var(--color-acento-medio);
+    padding: 0.6rem 1.2rem;
+    display: inline-block;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    color: var(--color-blanco-calido);
+    background-color: var(--color-acento-medio);
+    border: 1px solid var(--color-acento-fuerte);
+}
+
+
+main {
+    max-width: 1150px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: var(--color-blanco-calido);
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    gap: 2.5rem;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.8rem;
+}
+
+article {
+    background-color: var(--color-fondo);
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-acento-suave);
+}
+
+article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+article h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: var(--color-texto);
+}
+
+article p {
+    font-size: 1em;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    color: var(--color-texto);
+}
+
+time {
+    display: block;
+    font-size: 0.9em;
+    color: var(--color-acento-medio);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.sidebar {
+    padding-top: 0;
+}
+
+.formulario-seccion {
+    background-color: var(--color-blanco-calido);
+    padding: 2.2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    border: 1px solid var(--color-acento-suave);
+}
+
+.formulario-seccion h3 {
+    color: var(--color-texto);
+    font-size: 1.6em;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 0.8rem;
+    font-weight: 500;
+    color: var(--color-acento-medio);
+}
+
+input, select, textarea {
+    padding: 0.7rem;
+    border: 1px solid var(--color-acento-suave);
+    border-radius: 8px;
+    margin-top: 0.4rem;
+    font-family: var(--fuente-texto);
+    color: var(--color-texto);
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-acento-fuerte);
+    color: var(--color-texto);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    background-color: var(--color-blanco-calido);
+    color: var(--color-acento-fuerte);
+    border: 1px solid var(--color-acento-fuerte);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    gap: 0.6rem;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    accent-color: var(--color-acento-fuerte);
+}
+
+.checkbox-container label {
+    margin-top: 0;
+    font-weight: normal;
+    color: var(--color-acento-medio);
+}
+
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: var(--color-acento-suave);
+    margin-top: 4rem;
+    border-top: 2px solid var(--color-acento-medio);
+    color: var(--color-texto);
+}
+
+.social-media a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 12px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.social-media a img:hover {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        width: 100%;
+        margin: 0;
+    }
+    nav a {
+        display: block;
+        border-radius: 0;
+        border-bottom: 1px solid var(--color-acento-suave);
+    }
+    nav li:last-child a {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    main {
+        padding: 1.5rem;
+    }
+    .main-container {
+        gap: 2rem;
+    }
+    .formulario-seccion {
+        padding: 1.8rem;
+    }
+}

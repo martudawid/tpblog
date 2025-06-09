@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE Y CIUDADES</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Imagen de Café" class="logo">
+        <h1>CAFE Y CIUDADES</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio">
+        <div class="main-container">
+
+            <section id="Posts">
+                <h2>Nuestras Crónicas</h2>
+                <div class="posts-container">
+                    <article>
+                        <img src="images/viaje1.jpg" alt="Ambiente acogedor de una cafetería parisina">
+                        <h3>París: Un Viaje por sus Encantadoras Cafeterías</h3>
+                        <p>Más allá de sus famosos monumentos, París es un paraíso para los aficionados al café. Un lugar recomendado es el Café Strada, cerca del Centro Pompidou, ideal para esos momentos de tranquilidad. Otra joya es el icónico Café de Flore, donde cada sorbo te conecta con la rica historia cultural de la ciudad.</p>
+                        <time datetime="2025-06-05">5 de Junio, 2025</time>
+                    </article>
+                    <article>
+                        <img src="images/viaje2.jpg" alt="Mapa antiguo rodeado de granos de café">
+                        <h3>Tras la Pista del Origen del Café</h3>
+                        <p>La leyenda sitúa el descubrimiento del café en Etiopía, gracias a un pastor llamado Kaldi. Desde África, su cultivo y consumo se extendieron a la península arábiga durante el siglo XV, marcando el nacimiento de las primeras casas de café. Su llegada a Europa en el siglo XVII y posteriormente a América lo consolidó como una de las bebidas más populares del planeta.</p>
+                        <time datetime="2025-05-28">28 de Mayo, 2025</time>
+                    </article>
+                    <article>
+                        <img src="images/viaje3.jpg" alt="Paisaje urbano de Melbourne con una taza de café en primer plano">
+                        <h3>Descubriendo las Metrópolis Mundiales del Café</h3>
+                        <p>Varias ciudades alrededor del mundo son reconocidas por su profunda cultura cafetera. Melbourne, en Australia, es considerada la capital del café de especialidad a nivel global. Las históricas cafeterías de Viena, en Austria, han sido reconocidas por la UNESCO como Patrimonio Cultural. En Roma, disfrutar de un espresso es una tradición social esencial. Cada ciudad ofrece una experiencia única en el mundo del café.</p>
+                        <time datetime="2025-05-20">20 de Mayo, 2025</time>
+                    </article>
+                    <article>
+                        <img src="images/viaje4.jpg" alt="Idílico paisaje de una plantación de café en Colombia">
+                        <h3>Colombia y Bolivia: El Alma Cafetera de Latinoamérica</h3>
+                        <p>Latinoamérica juega un papel crucial en la producción mundial de café. Colombia es famosa por su "Eje Cafetero", un destino imperdible para explorar haciendas y degustar cafés suaves y equilibrados. Bolivia, en la región de los Yungas, ofrece un café de altura con cualidades organolépticas excepcionales, una valiosa contribución al mercado de especialidad.</p>
+                        <time datetime="2025-05-12">12 de Mayo, 2025</time>
+                    </article>
+                    <article>
+                        <img src="images/viaje5.jpg" alt="Diversos métodos caseros para la preparación de café">
+                        <h3>Prepara tu Propia Taza Perfecta: Métodos Caseros</h3>
+                        <p>Disfrutar de un café de calidad superior no es exclusivo de los profesionales. Métodos de extracción para el hogar, como la Prensa Francesa, permiten obtener una bebida con gran cuerpo y sabor. La tradicional cafetera Moka produce un café concentrado, similar al espresso. Para los que buscan un control total, el método Chemex facilita la experimentación para lograr una taza de pureza aromática incomparable.</p>
+                        <time datetime="2025-05-02">2 de Mayo, 2025</time>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div id="contacto" class="formulario-seccion">
+                    <h3>Compartí tu Pasión por el Café</h3>
+                    <p>¿Tenes alguna pregunta, idea o simplemente quieres charlar sobre tu café favorito? Contactanos</p>
+                    <form action="#" method="POST">
+                        <label for="nombre">Tu Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email">Tu Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="tipo-cafe">¿Cuál es tu método de preparación predilecto?</label>
+                        <select id="tipo-cafe" name="tipo-cafe">
+                            <option value="filtrado">Filtrado</option>
+                            <option value="espresso">Espresso</option>
+                            <option value="prensa">Prensa Francesa</option>
+                            <option value="cold-brew">Cold Brew</option>
+                        </select>
+
+                        <label for="mensaje">Tu Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="acepta">
+                            <label for="newsletter">Quiero mantenerme al día con las últimas novedades.</label>
+                        </div>
+
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="#" target="_blank"><img src="iconos/instagram.png" alt="Ícono de Instagram"></a>
+            <a href="#" target="_blank"><img src="iconos/linkedin.png" alt="Ícono de LinkedIn"></a>
+        </div>
+        <p>&copy; 2025 Rincón de Café y Viajes. </p>
+    </footer>
+</body>
+</html>
